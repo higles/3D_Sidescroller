@@ -20,9 +20,10 @@ GameObject:
   m_Component:
   - 4: {fileID: 4000010469769756}
   - 33: {fileID: 33000013465404444}
-  - 135: {fileID: 135000010642577474}
   - 23: {fileID: 23000013361523232}
   - 114: {fileID: 114000011284275250}
+  - 136: {fileID: 136000010416507160}
+  - 54: {fileID: 54000013836552372}
   m_Layer: 0
   m_Name: Asteroid
   m_TagString: Untagged
@@ -37,7 +38,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000013652216710}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 62.56, y: 22.42, z: -5.958821}
   m_LocalScale: {x: 5, y: 3, z: 3}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
@@ -79,6 +80,21 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000013652216710}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!54 &54000013836552372
+Rigidbody:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000013652216710}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!114 &114000011284275250
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -90,8 +106,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 586e43a56bbf34548a2638a6ac0266cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!135 &135000010642577474
-SphereCollider:
+  multiplier: 15
+--- !u!136 &136000010416507160
+CapsuleCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -99,6 +116,7 @@ SphereCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 2
   m_Radius: 0.5
+  m_Height: 1
+  m_Direction: 0
   m_Center: {x: 0, y: 0, z: 0}

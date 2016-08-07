@@ -5,7 +5,7 @@ public class RotateCamera : MonoBehaviour {
     public float speed;
 
     private Transform camera;
-    private bool isTopView;
+    public static bool isTopView;
     private bool isRotating = false;
     private float rotated = 0;
 
