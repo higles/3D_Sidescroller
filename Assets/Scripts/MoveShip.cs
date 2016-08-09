@@ -3,77 +3,40 @@ using System.Collections;
 using System;
 
 public class MoveShip : MonoBehaviour {
-    public Camera camera;
     private Transform ship;
-
-    private bool isTopView;
-    private bool outOfBounds = false;
-    private float dx = 0;
-    private float dy = 0;
-    private float xRange = 8.5f;
-    private float yRange = 8.5f;
-
-    public float DELTA;
+    private Rigidbody rb;
+    
+    private float dxRange = 8.5f;
+    private float dyRange = 8.5f;
+    
+    public float speed;
+    public float tilt;
 
 	// Use this for initialization
 	void Start () {
         ship = this.gameObject.transform;
+        rb = ship.GetComponent<Rigidbody>();
 	}
 	
 	// Update is called once per frame
 	void Update () {
-        isTopView = false;
-        if (camera.transform.position.y > 2f)
-        {
-            isTopView = true;
-        }
+        float move = Input.GetAxis("Vertical");
 
-        //Get direction to move ship
-        if (Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.W))
+        Vector3 movement;
+        if (RotateCamera.isTopView)
         {
-            if (isTopView)
-            {
-                dx = -DELTA;
-            }
-            else
-            {
-                dy = DELTA;
-            }
+            movement = new Vector3(-move, 0, 0);
+            rb.velocity = movement * speed;
+            rb.position = new Vector3(Mathf.Clamp(rb.position.x, -dxRange, dxRange), rb.position.y, rb.position.z);
+            rb.rotation = Quaternion.Euler(0.0f, 0.0f, rb.velocity.x * -tilt);
+            ship.Find("VCollidable").rotation = Quaternion.Euler(0.0f, 0.0f, 0.0f);
         }
-        else if (Input.GetKey(KeyCode.DownArrow) || Input.GetKey(KeyCode.S))
+        else
         {
-            if (isTopView)
-            {
-                dx = DELTA;
-            }
-            else
-            {
-                dy = -DELTA;
-            }
+            movement = new Vector3(0, move, 0);
+            rb.velocity = movement * speed;
+            rb.position = new Vector3(rb.position.x, Mathf.Clamp(rb.position.y, -dyRange, dyRange), rb.position.z);
+            rb.rotation = Quaternion.Euler(rb.velocity.y * -tilt * 0.5f, 0.0f, 0.0f);
         }
-
-        //Check bounds
-        if (Math.Abs(ship.position.x + dx) > xRange)
-        {
-            float polarity = (ship.position.x + dx) / Math.Abs(ship.position.x + dx);
-            ship.position.Set(xRange * polarity, ship.position.y, ship.position.z);
-            outOfBounds = true;
-        }
-        if (Math.Abs(ship.position.y + dy) > xRange)
-        {
-            float polarity = (ship.position.y + dy) / Math.Abs(ship.position.y + dy);
-            ship.position.Set(ship.position.x, yRange * polarity, ship.position.z);
-            outOfBounds = true;
-        }
-        
-        if (!outOfBounds)
-        {   //if ship is in bounds after move, then move it.
-            ship.Translate(new Vector3(dx, dy, 0));
-        }
-
-        //Reset values
-        outOfBounds = false;
-        dx = 0;
-        dy = 0;
     }
 }
