@@ -283,6 +283,10 @@ Prefab:
       propertyPath: m_LocalEulerAnglesHint.y
       value: -90
       objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: e94fde3b7b3cc0841af3669e00f00e92, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: f7932a58166a64a1f84d506a908f6f75, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e94fde3b7b3cc0841af3669e00f00e92, type: 3}
   m_IsPrefabParent: 0
@@ -500,6 +504,22 @@ Prefab:
       propertyPath: m_Name
       value: ship
       objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 9fb77121f40268f418cd84099497770b, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 48a5a1966138e4986b99838f38982d1a, type: 2}
+    - target: {fileID: 2300000, guid: 9fb77121f40268f418cd84099497770b, type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 48a5a1966138e4986b99838f38982d1a, type: 2}
+    - target: {fileID: 2300000, guid: 9fb77121f40268f418cd84099497770b, type: 3}
+      propertyPath: m_Materials.Array.data[2]
+      value: 
+      objectReference: {fileID: 2100000, guid: 48a5a1966138e4986b99838f38982d1a, type: 2}
+    - target: {fileID: 2300000, guid: 9fb77121f40268f418cd84099497770b, type: 3}
+      propertyPath: m_Materials.Array.data[3]
+      value: 
+      objectReference: {fileID: 2100000, guid: 48a5a1966138e4986b99838f38982d1a, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9fb77121f40268f418cd84099497770b, type: 3}
   m_IsPrefabParent: 0
@@ -519,7 +539,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   modifier: 1
-  asteroid: {fileID: 4000010469769756, guid: ed3955e61514d3545ad24f9cc53fc296, type: 2}
+  asteroid: {fileID: 444252, guid: ed3955e61514d3545ad24f9cc53fc296, type: 2}
 --- !u!1 &1887388955 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100002, guid: e94fde3b7b3cc0841af3669e00f00e92, type: 3}
