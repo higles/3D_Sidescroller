@@ -28,7 +28,7 @@ public class ShipCollision : MonoBehaviour {
         {
             if (col.gameObject.name == "Asteroid(Clone)")
             {
-                //Destroy(GameObject.Find("ship"));
+                //Destroy(transform.parent.gameObject);
                 Destroy(col.gameObject);
                 System.Console.WriteLine("Delete Asteroid");
             }
