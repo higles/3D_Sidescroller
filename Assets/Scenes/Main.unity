@@ -105,8 +105,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 706e4f8687a637e488d2e3fbb728d865, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  camera: {fileID: 193598000}
-  dDELTA: 1
   speed: 7
   tilt: 5
 --- !u!4 &78582753 stripped
