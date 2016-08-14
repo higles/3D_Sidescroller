@@ -28,7 +28,7 @@ public class MoveShip : MonoBehaviour {
             movement = new Vector3(-move, 0, 0);
             rb.velocity = movement * speed;
             rb.position = new Vector3(Mathf.Clamp(rb.position.x, -dxRange, dxRange), rb.position.y, rb.position.z);
-            rb.rotation = Quaternion.Euler(0.0f, 0.0f, rb.velocity.x * -tilt);
+            rb.rotation = Quaternion.Euler(0.0f, 180.0f, rb.velocity.x * -tilt);
             ship.Find("VCollidable").rotation = Quaternion.Euler(0.0f, 0.0f, 0.0f);
         }
         else
@@ -36,7 +36,7 @@ public class MoveShip : MonoBehaviour {
             movement = new Vector3(0, move, 0);
             rb.velocity = movement * speed;
             rb.position = new Vector3(rb.position.x, Mathf.Clamp(rb.position.y, -dyRange, dyRange), rb.position.z);
-            rb.rotation = Quaternion.Euler(rb.velocity.y * -tilt * 0.5f, 0.0f, 0.0f);
+            rb.rotation = Quaternion.Euler(rb.velocity.y * tilt * 0.5f, 180.0f, 0.0f);
         }
     }
 }

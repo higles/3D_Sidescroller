@@ -1,15 +1,22 @@
 fileFormatVersion: 2
-guid: df5b7671bc06a4549bcaf19e77c26657
-timeCreated: 1471205737
+guid: 5a860fc5990d2e8489f2c9550c3e4c3f
+timeCreated: 1471215892
 licenseType: Free
 ModelImporter:
   serializedVersion: 19
   fileIDToRecycleName:
     100000: //RootNode
+    100002: Inner
+    100004: Outer
     400000: //RootNode
-    2300000: //RootNode
-    3300000: //RootNode
-    4300000: Plane
+    400002: Inner
+    400004: Outer
+    2300000: Inner
+    2300002: Outer
+    3300000: Inner
+    3300002: Outer
+    4300000: Inner
+    4300002: Outer
   materials:
     importMaterials: 1
     materialName: 0
