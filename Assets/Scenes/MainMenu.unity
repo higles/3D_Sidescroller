@@ -2046,10 +2046,9 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1569499625}
-  - 114: {fileID: 1569499626}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: SettingsMenu
-  m_TagString: Settings Menu Tag
+  m_TagString: SettingsMenuTag
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2074,17 +2073,6 @@ Transform:
   - {fileID: 522332959}
   m_Father: {fileID: 14011445}
   m_RootOrder: 2
---- !u!114 &1569499626
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1569499624}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1216be18d77304ea58271c69d3996d3a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1583931100
 GameObject:
   m_ObjectHideFlags: 0
@@ -2524,10 +2512,9 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1684256336}
-  - 114: {fileID: 1684256337}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: MainMenu
-  m_TagString: Main Menu Tag
+  m_TagString: MainMenuTag
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2550,17 +2537,6 @@ Transform:
   - {fileID: 679167617}
   m_Father: {fileID: 14011445}
   m_RootOrder: 1
---- !u!114 &1684256337
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1684256335}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1216be18d77304ea58271c69d3996d3a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1793846738
 GameObject:
   m_ObjectHideFlags: 0

@@ -4,8 +4,9 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Main Menu Tag
-  - Settings Menu Tag
+  - MainMenuTag
+  - SettingsMenuTag
+  - RetryTag
   layers:
   - Default
   - TransparentFX

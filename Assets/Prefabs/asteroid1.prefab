@@ -40,7 +40,7 @@ GameObject:
   - 135: {fileID: 135000011226900010}
   - 54: {fileID: 54000010564693114}
   m_Layer: 0
-  m_Name: Asteroid
+  m_Name: asteroid1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

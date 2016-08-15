@@ -3,14 +3,14 @@ using System.Collections;
 
 public class ScreenTransition : MonoBehaviour {
 
-	GameObject mainMenu;
-	GameObject settingsMenu;
+	private GameObject mainMenu;
+	private GameObject settingsMenu;
 
 	// Use this for initialization
 	void Start () 
 	{
-		mainMenu = GameObject.FindGameObjectWithTag("Main Menu Tag");
-		settingsMenu = GameObject.FindGameObjectWithTag("Settings Menu Tag");
+		mainMenu = GameObject.FindGameObjectWithTag("MainMenuTag");
+		settingsMenu = GameObject.FindGameObjectWithTag("SettingsMenuTag");
 
 		mainMenu.SetActive(true);
 		settingsMenu.SetActive(false);
@@ -20,7 +20,6 @@ public class ScreenTransition : MonoBehaviour {
 	{
 		mainMenu.SetActive(false);
 		settingsMenu.SetActive(true);
-
 	}
 
 	public void transitionToMainMenu ()
