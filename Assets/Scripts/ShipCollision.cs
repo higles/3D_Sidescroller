@@ -6,11 +6,15 @@ public class ShipCollision : MonoBehaviour {
     private bool isCollidable = false;
 	
 	private GameObject retry;
+	private GameObject scores;
 
 	// Use this for initialization
 	void Start () {
 		retry = GameObject.FindGameObjectWithTag("RetryTag");
 		retry.SetActive(false);	
+
+		scores = GameObject.FindGameObjectWithTag("HighScoreTag");
+		scores.SetActive(false);
 	}
 	
 	// Update is called once per frame
@@ -33,7 +37,7 @@ public class ShipCollision : MonoBehaviour {
         {
             if (col.gameObject.name == "Asteroid(Clone)")
             {
-				//Destroy(transform.parent.gameObject);
+				Destroy(transform.parent.gameObject);
                 Destroy(col.gameObject);
                 System.Console.WriteLine("Delete Asteroid");
 

@@ -100,7 +100,7 @@ GameObject:
   - 224: {fileID: 5175405}
   - 222: {fileID: 5175407}
   - 114: {fileID: 5175406}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Fill
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -261,7 +261,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 224: {fileID: 59817442}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Handle Slide Area
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -297,7 +297,7 @@ GameObject:
   - 224: {fileID: 149636370}
   - 222: {fileID: 149636372}
   - 114: {fileID: 149636371}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -371,7 +371,7 @@ GameObject:
   - 224: {fileID: 194902792}
   - 222: {fileID: 194902794}
   - 114: {fileID: 194902793}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -445,7 +445,7 @@ GameObject:
   - 224: {fileID: 198782345}
   - 222: {fileID: 198782347}
   - 114: {fileID: 198782346}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Music Volume Title
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -518,7 +518,7 @@ GameObject:
   m_Component:
   - 224: {fileID: 245217391}
   - 114: {fileID: 245217392}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Sound Effects Volume Slider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -604,7 +604,7 @@ GameObject:
   - 224: {fileID: 255485788}
   - 222: {fileID: 255485790}
   - 114: {fileID: 255485789}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -678,7 +678,7 @@ GameObject:
   - 224: {fileID: 370870864}
   - 222: {fileID: 370870866}
   - 114: {fileID: 370870865}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -746,7 +746,7 @@ GameObject:
   - 224: {fileID: 404063886}
   - 222: {fileID: 404063888}
   - 114: {fileID: 404063887}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Settings Menu Title
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -820,7 +820,7 @@ GameObject:
   - 224: {fileID: 490824450}
   - 222: {fileID: 490824452}
   - 114: {fileID: 490824451}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Sound Effects Volume Title
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -895,7 +895,7 @@ GameObject:
   - 222: {fileID: 522332962}
   - 114: {fileID: 522332961}
   - 114: {fileID: 522332960}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Back Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -960,9 +960,20 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1650497763}
-        m_MethodName: transitionToMainMenu
-        m_Mode: 1
+      - m_Target: {fileID: 1684256335}
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1569499624}
+        m_MethodName: SetActive
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -1017,7 +1028,7 @@ GameObject:
   - 222: {fileID: 679167620}
   - 114: {fileID: 679167619}
   - 114: {fileID: 679167618}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Exit Game Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1138,7 +1149,7 @@ GameObject:
   - 224: {fileID: 735151851}
   - 222: {fileID: 735151853}
   - 114: {fileID: 735151852}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1205,7 +1216,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 224: {fileID: 782899643}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Fill Area
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1241,7 +1252,7 @@ GameObject:
   - 224: {fileID: 805975079}
   - 222: {fileID: 805975081}
   - 114: {fileID: 805975080}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Handle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1309,7 +1320,7 @@ GameObject:
   - 224: {fileID: 844346428}
   - 222: {fileID: 844346430}
   - 114: {fileID: 844346429}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Main Menu Title
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1382,7 +1393,7 @@ GameObject:
   m_Component:
   - 224: {fileID: 1033810427}
   - 114: {fileID: 1033810428}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Accelerometer Toggle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1613,7 +1624,7 @@ GameObject:
   - 224: {fileID: 1301776047}
   - 222: {fileID: 1301776049}
   - 114: {fileID: 1301776048}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Fill
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1681,7 +1692,7 @@ GameObject:
   - 224: {fileID: 1346410434}
   - 222: {fileID: 1346410436}
   - 114: {fileID: 1346410435}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1859,7 +1870,7 @@ GameObject:
   - 222: {fileID: 1421336679}
   - 114: {fileID: 1421336678}
   - 114: {fileID: 1421336677}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Settings Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1924,9 +1935,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1650497763}
-        m_MethodName: transitionToSettings
-        m_Mode: 1
+      - m_Target: {fileID: 1684256335}
+        m_MethodName: SetActive
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -1934,6 +1945,17 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1569499624}
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
@@ -1980,7 +2002,7 @@ GameObject:
   - 224: {fileID: 1458059807}
   - 222: {fileID: 1458059809}
   - 114: {fileID: 1458059808}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Checkmark
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2046,9 +2068,9 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1569499625}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: SettingsMenu
-  m_TagString: SettingsMenuTag
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2059,9 +2081,9 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1569499624}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 18.161798, y: -31.403564, z: 130.90909}
-  m_LocalScale: {x: 2.909091, y: 2.909091, z: 2.909091}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 18.161797, y: -31.403563, z: 130.90904}
+  m_LocalScale: {x: 2.9090908, y: 2.9090908, z: 2.9090908}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 404063886}
@@ -2081,7 +2103,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 224: {fileID: 1583931101}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Handle Slide Area
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2181,7 +2203,7 @@ GameObject:
   - 222: {fileID: 1614980851}
   - 114: {fileID: 1614980850}
   - 114: {fileID: 1614980849}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Continue Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2302,7 +2324,7 @@ GameObject:
   - 224: {fileID: 1621242645}
   - 222: {fileID: 1621242647}
   - 114: {fileID: 1621242646}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2376,9 +2398,8 @@ GameObject:
   - 4: {fileID: 1650497761}
   - 114: {fileID: 1650497760}
   - 114: {fileID: 1650497762}
-  - 114: {fileID: 1650497763}
   m_Layer: 0
-  m_Name: _Manager
+  m_Name: _GuiManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2395,6 +2416,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ece7206a97da4f1bb53810d8db878c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hideMe: {fileID: 1569499624}
+  hideMe2: {fileID: 0}
 --- !u!4 &1650497761
 Transform:
   m_ObjectHideFlags: 0
@@ -2419,17 +2442,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b12cdf9e593141548f48b02967b61e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1650497763
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1650497759}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1216be18d77304ea58271c69d3996d3a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1666764506
 GameObject:
   m_ObjectHideFlags: 0
@@ -2440,7 +2452,7 @@ GameObject:
   - 224: {fileID: 1666764507}
   - 222: {fileID: 1666764509}
   - 114: {fileID: 1666764508}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Label
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2512,9 +2524,9 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1684256336}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: MainMenu
-  m_TagString: MainMenuTag
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2547,7 +2559,7 @@ GameObject:
   - 224: {fileID: 1793846739}
   - 222: {fileID: 1793846741}
   - 114: {fileID: 1793846740}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2614,7 +2626,7 @@ GameObject:
   m_Component:
   - 224: {fileID: 1813129948}
   - 114: {fileID: 1813129949}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Music Volume Slider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2807,7 +2819,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 224: {fileID: 2010233752}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Fill Area
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2843,7 +2855,7 @@ GameObject:
   - 224: {fileID: 2045230154}
   - 222: {fileID: 2045230156}
   - 114: {fileID: 2045230155}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Handle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2912,7 +2924,7 @@ GameObject:
   - 222: {fileID: 2052480462}
   - 114: {fileID: 2052480461}
   - 114: {fileID: 2052480460}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: New Game Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
